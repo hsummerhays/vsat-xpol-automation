@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<configuration>
+  <appSettings>
+    <!-- Example placeholders; set real values in deployment env or local Web.config (not committed) -->
+    <add key="LogPath" value="${LOG_PATH}" />
+    <add key="ServiceBaseAddress" value="http://localhost:8000/ServiceModel/vsatxpolrmp" />
+  </appSettings>
+  <system.web>
+    <compilation debug="true" targetFramework="3.5" />
+    <authentication mode="Windows" />
+    <httpRuntime requestValidationMode="2.0" />
+  </system.web>
+  <system.webServer>
+    <validation validateIntegratedModeConfiguration="false" />
+    <modules runAllManagedModulesForAllRequests="true" />
+    <directoryBrowse enabled="false" />
+    <defaultDocument>
+      <files>
+        <clear />
+        <add value="Default.aspx" />
+      </files>
+    </defaultDocument>
+  </system.webServer>
+</configuration>

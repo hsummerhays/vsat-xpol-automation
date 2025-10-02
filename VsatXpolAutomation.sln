@@ -1,0 +1,25 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainstreamData.Monitoring.VsatXpolLmp", "MainstreamData.Monitoring.VsatXpolLmp\MainstreamData.Monitoring.VsatXpolLmp.csproj", "{C8F81681-9D12-4DBE-8F33-A2216B126366}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VsatXpolLmp.Web", "VsatXpolLmp.Web\VsatXpolLmp.Web.csproj", "{3A3C9E3B-3C3B-4B82-B5A2-8C8D85A4D2C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8F81681-9D12-4DBE-8F33-A2216B126366}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8F81681-9D12-4DBE-8F33-A2216B126366}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8F81681-9D12-4DBE-8F33-A2216B126366}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8F81681-9D12-4DBE-8F33-A2216B126366}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A3C9E3B-3C3B-4B82-B5A2-8C8D85A4D2C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A3C9E3B-3C3B-4B82-B5A2-8C8D85A4D2C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A3C9E3B-3C3B-4B82-B5A2-8C8D85A4D2C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A3C9E3B-3C3B-4B82-B5A2-8C8D85A4D2C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

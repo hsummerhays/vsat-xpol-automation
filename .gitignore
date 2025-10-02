@@ -1,0 +1,51 @@
+# Build outputs
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+[TestResults]*/
+
+# Visual Studio/IDE
+.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.vspscc
+
+# Packages
+packages/
+*.nupkg
+
+# Generated files
+*.Designer.cs
+*.g.cs
+*.Generated.cs
+
+# Configs with environment/local secrets
+App.config
+app.config
+Web.config
+*.exe.config
+*.vshost.*
+
+# Keys/Certificates (never commit)
+*.pfx
+*.snk
+*.key
+
+# OS/Junk
+Thumbs.db
+.DS_Store
+*.tmp
+~$*
+
+# Coverage/analysis
+coverage/
+*.coverage
+*.coveragexml
+
+# Rider/JetBrains
+.idea/
+*.iml

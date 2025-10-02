@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<configuration>
+  <!-- Logging (Enterprise Library) -->
+  <configSections>
+    <section name="loggingConfiguration" type="Microsoft.Practices.EnterpriseLibrary.Logging.Configuration.LoggingSettings, Microsoft.Practices.EnterpriseLibrary.Logging, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" requirePermission="true"/>
+  </configSections>
+  <loggingConfiguration name="Logging Application Block" tracingEnabled="true" defaultCategory="General" logWarningsWhenNoCategoriesMatch="true">
+    <listeners>
+      <add name="Rolling Flat File Trace Listener"
+           type="Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.RollingFlatFileTraceListener, Microsoft.Practices.EnterpriseLibrary.Logging, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+           listenerDataType="Microsoft.Practices.EnterpriseLibrary.Logging.Configuration.RollingFlatFileTraceListenerData, Microsoft.Practices.EnterpriseLibrary.Logging, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+           fileName="${LOG_PATH}\VsatXpolRmp\VsatXpolRmp.log"
+           formatter="Text Formatter"
+           rollInterval="Day" />
+    </listeners>
+    <formatters>
+      <add name="Text Formatter"
+           type="Microsoft.Practices.EnterpriseLibrary.Logging.Formatters.TextFormatter, Microsoft.Practices.EnterpriseLibrary.Logging, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+           template="Timestamp: {timestamp}{newline}Message: {message}{newline}Category: {category}{newline}Priority: {priority}{newline}EventId: {eventid}{newline}Severity: {severity}{newline}Title:{title}{newline}Machine: {localMachine}{newline}App Domain: {localAppDomain}{newline}ProcessId: {localProcessId}{newline}Process Name: {localProcessName}{newline}Thread Name: {threadName}{newline}Win32 ThreadId:{win32ThreadId}{newline}Extended Properties: {dictionary({key} - {value}{newline})}" />
+    </formatters>
+    <categorySources>
+      <add switchValue="All" name="General">
+        <listeners>
+          <add name="Rolling Flat File Trace Listener"/>
+        </listeners>
+      </add>
+    </categorySources>
+    <specialSources>
+      <allEvents switchValue="All" name="All Events" />
+    </specialSources>
+  </loggingConfiguration>
+
+  <!-- WCF (example; replace addresses/bindings as needed) -->
+  <system.serviceModel>
+    <bindings>
+      <wsHttpBinding>
+        <binding name="NoSecurity">
+          <security mode="None" />
+        </binding>
+      </wsHttpBinding>
+    </bindings>
+    <services>
+      <service name="MainstreamData.Monitoring.VsatXpol.VsatXpolRmp.VsatXpolRmpHost"
+               behaviorConfiguration="VsatXpolRmpHostBehavior">
+        <host>
+          <baseAddresses>
+            <add baseAddress="http://localhost:8000/ServiceModel/vsatxpolrmp" />
+          </baseAddresses>
+        </host>
+        <endpoint address=""
+                  binding="wsHttpBinding"
+                  bindingConfiguration="NoSecurity"
+                  contract="MainstreamData.Monitoring.VsatXpol.VsatXpolRmp.IVsatXpolRmpHost" />
+        <endpoint address="mex" binding="mexHttpBinding" contract="IMetadataExchange" />
+      </service>
+    </services>
+    <behaviors>
+      <serviceBehaviors>
+        <behavior name="VsatXpolRmpHostBehavior">
+          <serviceMetadata httpGetEnabled="true" />
+          <serviceDebug includeExceptionDetailInFaults="False" />
+        </behavior>
+      </serviceBehaviors>
+    </behaviors>
+  </system.serviceModel>
+
+  <!-- Application settings (do NOT commit real values) -->
+  <appSettings>
+    <!-- Example placeholders -->
+    <add key="SpectrumAnalyzerGpibBoardNumCopol" value="${GPIB_COPOL_BOARD}" />
+    <add key="SpectrumAnalyzerAddressCopol" value="${GPIB_COPOL_ADDR}" />
+    <add key="SpectrumAnalyzerGpibBoardNumXpol" value="${GPIB_XPOL_BOARD}" />
+    <add key="SpectrumAnalyzerAddressXpol" value="${GPIB_XPOL_ADDR}" />
+  </appSettings>
+</configuration>
