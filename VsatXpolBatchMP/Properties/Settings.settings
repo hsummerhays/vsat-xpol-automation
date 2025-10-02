@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MainstreamData.Monitoring.VsatXpol.VsatXpolBatchMP.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DatabaseServer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">centralsql</Value>
+    </Setting>
+    <Setting Name="DatabaseName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">vsatxpol</Value>
+    </Setting>
+    <Setting Name="DatabaseUser" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ncc</Value>
+    </Setting>
+    <Setting Name="DatabasePassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">onlinetime</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

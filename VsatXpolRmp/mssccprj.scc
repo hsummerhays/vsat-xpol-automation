@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[VsatXpolRmp.sln]
+SCC_Aux_Path = "\\data1\data\VSS\MsdVss"
+SCC_Project_Name = "$/Custom Engineering/HAL/Modules/VsatXpolRmp", YUXLAAAA
+
+[VsatXpolRmp.csproj]
+SCC_Aux_Path = "\\data1\data\VSS\MsdVss"
+SCC_Project_Name = "$/Custom Engineering/HAL/Modules/VsatXpolRmp", YUXLAAAA

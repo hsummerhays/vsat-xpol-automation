@@ -1,0 +1,96 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xpol", "Xpol.csproj", "{0486D6E9-0F2B-4113-A0C5-01227C8E4AC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainstreamData.ExceptionHandling", "..\MainstreamData.ExceptionHandling\MainstreamData.ExceptionHandling.csproj", "{0DD3E7E4-15CF-443A-BC18-22047F8A7E52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainstreamData.Monitoring.VsatXpol", "..\MainstreamData.Monitoring.VsatXpol\MainstreamData.Monitoring.VsatXpol.csproj", "{559F4D15-9A17-47E0-8A4C-F26745BCAFDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainstreamData.Utility", "..\MainstreamData.Utility\MainstreamData.Utility.csproj", "{AEA48EBE-0953-441A-B4EE-018EA24DD5B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainstreamData.Logging", "..\MainstreamData.Logging\MainstreamData.Logging.csproj", "{B1218A61-7E67-4842-8847-48A1102768E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainstreamData.Monitoring.VsatXpolLmp", "..\MainstreamData.Monitoring.VsatXpolLmp\MainstreamData.Monitoring.VsatXpolLmp.csproj", "{C8F81681-9D12-4DBE-8F33-A2216B126366}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 7
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Xpol.csproj
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = ..\\MainstreamData.ExceptionHandling\\MainstreamData.ExceptionHandling.csproj
+		SccProjectName2 = \u0022$/Custom\u0020Engineering/HAL/Modules/Monitor\u0020Point\u0020Framework/MainstreamData.ExceptionHandling\u0022,\u0020UJRKAAAA
+		SccLocalPath2 = ..\\MainstreamData.ExceptionHandling
+		SccProjectUniqueName3 = ..\\MainstreamData.Monitoring.VsatXpol\\MainstreamData.Monitoring.VsatXpol.csproj
+		SccProjectName3 = \u0022$/Custom\u0020Engineering/HAL/Modules/MainstreamData.Monitoring.VsatXpol\u0022,\u0020UVXLAAAA
+		SccLocalPath3 = ..\\MainstreamData.Monitoring.VsatXpol
+		SccProjectUniqueName4 = ..\\MainstreamData.Utility\\MainstreamData.Utility.csproj
+		SccProjectName4 = \u0022$/Custom\u0020Engineering/HAL/Modules/Monitor\u0020Point\u0020Framework/MainstreamData.Utility\u0022,\u0020XJRKAAAA
+		SccLocalPath4 = ..\\MainstreamData.Utility
+		SccProjectUniqueName5 = ..\\MainstreamData.Logging\\MainstreamData.Logging.csproj
+		SccProjectName5 = \u0022$/Custom\u0020Engineering/HAL/Modules/Monitor\u0020Point\u0020Framework/MainstreamData.Logging\u0022,\u0020VJRKAAAA
+		SccLocalPath5 = ..\\MainstreamData.Logging
+		SccProjectUniqueName6 = ..\\MainstreamData.Monitoring.VsatXpolLmp\\MainstreamData.Monitoring.VsatXpolLmp.csproj
+		SccProjectName6 = \u0022$/Custom\u0020Engineering/HAL/Modules/MainstreamData.Monitoring.VsatXpolLmp\u0022,\u0020ALYLAAAA
+		SccLocalPath6 = ..\\MainstreamData.Monitoring.VsatXpolLmp
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0486D6E9-0F2B-4113-A0C5-01227C8E4AC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0486D6E9-0F2B-4113-A0C5-01227C8E4AC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0486D6E9-0F2B-4113-A0C5-01227C8E4AC8}.Debug|x86.ActiveCfg = Debug|x86
+		{0486D6E9-0F2B-4113-A0C5-01227C8E4AC8}.Debug|x86.Build.0 = Debug|x86
+		{0486D6E9-0F2B-4113-A0C5-01227C8E4AC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0486D6E9-0F2B-4113-A0C5-01227C8E4AC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0486D6E9-0F2B-4113-A0C5-01227C8E4AC8}.Release|x86.ActiveCfg = Release|x86
+		{0486D6E9-0F2B-4113-A0C5-01227C8E4AC8}.Release|x86.Build.0 = Release|x86
+		{0DD3E7E4-15CF-443A-BC18-22047F8A7E52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DD3E7E4-15CF-443A-BC18-22047F8A7E52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DD3E7E4-15CF-443A-BC18-22047F8A7E52}.Debug|x86.ActiveCfg = Debug|x86
+		{0DD3E7E4-15CF-443A-BC18-22047F8A7E52}.Debug|x86.Build.0 = Debug|x86
+		{0DD3E7E4-15CF-443A-BC18-22047F8A7E52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DD3E7E4-15CF-443A-BC18-22047F8A7E52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DD3E7E4-15CF-443A-BC18-22047F8A7E52}.Release|x86.ActiveCfg = Release|x86
+		{0DD3E7E4-15CF-443A-BC18-22047F8A7E52}.Release|x86.Build.0 = Release|x86
+		{559F4D15-9A17-47E0-8A4C-F26745BCAFDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{559F4D15-9A17-47E0-8A4C-F26745BCAFDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{559F4D15-9A17-47E0-8A4C-F26745BCAFDF}.Debug|x86.ActiveCfg = Debug|x86
+		{559F4D15-9A17-47E0-8A4C-F26745BCAFDF}.Debug|x86.Build.0 = Debug|x86
+		{559F4D15-9A17-47E0-8A4C-F26745BCAFDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{559F4D15-9A17-47E0-8A4C-F26745BCAFDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{559F4D15-9A17-47E0-8A4C-F26745BCAFDF}.Release|x86.ActiveCfg = Release|x86
+		{559F4D15-9A17-47E0-8A4C-F26745BCAFDF}.Release|x86.Build.0 = Release|x86
+		{AEA48EBE-0953-441A-B4EE-018EA24DD5B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEA48EBE-0953-441A-B4EE-018EA24DD5B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEA48EBE-0953-441A-B4EE-018EA24DD5B2}.Debug|x86.ActiveCfg = Debug|x86
+		{AEA48EBE-0953-441A-B4EE-018EA24DD5B2}.Debug|x86.Build.0 = Debug|x86
+		{AEA48EBE-0953-441A-B4EE-018EA24DD5B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEA48EBE-0953-441A-B4EE-018EA24DD5B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEA48EBE-0953-441A-B4EE-018EA24DD5B2}.Release|x86.ActiveCfg = Release|x86
+		{AEA48EBE-0953-441A-B4EE-018EA24DD5B2}.Release|x86.Build.0 = Release|x86
+		{B1218A61-7E67-4842-8847-48A1102768E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1218A61-7E67-4842-8847-48A1102768E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1218A61-7E67-4842-8847-48A1102768E1}.Debug|x86.ActiveCfg = Debug|x86
+		{B1218A61-7E67-4842-8847-48A1102768E1}.Debug|x86.Build.0 = Debug|x86
+		{B1218A61-7E67-4842-8847-48A1102768E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1218A61-7E67-4842-8847-48A1102768E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1218A61-7E67-4842-8847-48A1102768E1}.Release|x86.ActiveCfg = Release|x86
+		{B1218A61-7E67-4842-8847-48A1102768E1}.Release|x86.Build.0 = Release|x86
+		{C8F81681-9D12-4DBE-8F33-A2216B126366}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8F81681-9D12-4DBE-8F33-A2216B126366}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8F81681-9D12-4DBE-8F33-A2216B126366}.Debug|x86.ActiveCfg = Debug|x86
+		{C8F81681-9D12-4DBE-8F33-A2216B126366}.Debug|x86.Build.0 = Debug|x86
+		{C8F81681-9D12-4DBE-8F33-A2216B126366}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8F81681-9D12-4DBE-8F33-A2216B126366}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8F81681-9D12-4DBE-8F33-A2216B126366}.Release|x86.ActiveCfg = Release|x86
+		{C8F81681-9D12-4DBE-8F33-A2216B126366}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

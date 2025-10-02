@@ -1,0 +1,39 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MainstreamData.Monitoring.Xpol.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="CW1LbandFreqMhz" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="CW2LbandFreqMhz" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="CW3LbandFreqMhz" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="CW4LbandFreqMhz" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="CW5LbandFreqMhz" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">1377.95</Value>
+    </Setting>
+    <Setting Name="BeaconCopolLbandFreqMhz" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">1448</Value>
+    </Setting>
+    <Setting Name="BeaconCrosspolLbandFreqMhz" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">952</Value>
+    </Setting>
+    <Setting Name="SpectrumAnalyzerAddressCopol" Type="System.Int16" Scope="Application">
+      <Value Profile="(Default)">20</Value>
+    </Setting>
+    <Setting Name="SpectrumAnalyzerAddressXpol" Type="System.Int16" Scope="Application">
+      <Value Profile="(Default)">21</Value>
+    </Setting>
+    <Setting Name="SpectrumAnalyzerGpibBoardNumCopol" Type="System.Int16" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="SpectrumAnalyzerGpibBoardNumXpol" Type="System.Int16" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

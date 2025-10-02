@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{81E859FF-7050-4175-B7A6-36C4F923C692}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MainstreamData.Monitoring.VsatXpol.VsatXpolBatchMP</RootNamespace>
+    <AssemblyName>VsatXpolBatchMP</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>MainstreamDataDotNetStrongNameKey2010-06-14.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ProjectInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProjectInstaller.Designer.cs">
+      <DependentUpon>ProjectInstaller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="VsatXpolBatchMP.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MainstreamData.Data\MainstreamData.Data.csproj">
+      <Project>{75C209CA-BB02-4D36-8892-533120184022}</Project>
+      <Name>MainstreamData.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MainstreamData.ExceptionHandling\MainstreamData.ExceptionHandling.csproj">
+      <Project>{0DD3E7E4-15CF-443A-BC18-22047F8A7E52}</Project>
+      <Name>MainstreamData.ExceptionHandling</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MainstreamData.Logging\MainstreamData.Logging.csproj">
+      <Project>{B1218A61-7E67-4842-8847-48A1102768E1}</Project>
+      <Name>MainstreamData.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MainstreamData.Monitoring.Linkstar\MainstreamData.Monitoring.Linkstar.csproj">
+      <Project>{6EF11FE0-5B42-479F-A1FC-F0D233057415}</Project>
+      <Name>MainstreamData.Monitoring.Linkstar</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MainstreamData.Monitoring.VsatXpolLmp\MainstreamData.Monitoring.VsatXpolLmp.csproj">
+      <Project>{C8F81681-9D12-4DBE-8F33-A2216B126366}</Project>
+      <Name>MainstreamData.Monitoring.VsatXpolLmp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MainstreamData.Monitoring.VsatXpol\MainstreamData.Monitoring.VsatXpol.csproj">
+      <Project>{559F4D15-9A17-47E0-8A4C-F26745BCAFDF}</Project>
+      <Name>MainstreamData.Monitoring.VsatXpol</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MainstreamData.Monitoring\MainstreamData.Monitoring.csproj">
+      <Project>{3CC5856D-C6D3-47F8-80B0-897A011C6504}</Project>
+      <Name>MainstreamData.Monitoring</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MainstreamData.Utility\MainstreamData.Utility.csproj">
+      <Project>{AEA48EBE-0953-441A-B4EE-018EA24DD5B2}</Project>
+      <Name>MainstreamData.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MainstreamData.Web\MainstreamData.Web.csproj">
+      <Project>{787FB235-E544-4895-B82C-BCD9FFD5B710}</Project>
+      <Name>MainstreamData.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ProjectInstaller.resx">
+      <DependentUpon>ProjectInstaller.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="FxCop.FxCop" />
+    <None Include="MainstreamDataDotNetStrongNameKey2010-06-14.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CustomDictionary.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
